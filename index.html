@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Movies and TV Shows</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body align="center">
+		
+		<div id="startPage">
+			<h1>Movie and TV Show Finder</h1>
+			<p id="description">Enter Movie or TV Show Name Below: </p>
+			<input type="text" id="movieName">
+			<br><br>
+			<button id = "startBtn" class = "home-button" onclick = "clickAllowed()"> Get Movie/Show</button>
+			<!--
+			<br><br>
+			<button  onclick="popular()" class = "home-button">Get Popular Movies</button>
+			-->
+			<br><br>
+			<button onclick="history()" class = "home-button">Show History</button>
+			<br><br>
+			<button onclick="showCredits()" class = "home-button">Credits</button>
+	</div>
+				
+			<div id = "creditsPage" >
+				<button class="getToHome" onclick="location.reload()">Home</button>
+				<h3>Credits:</h3>
+				<h4>API Source: <a href="https://www.omdbapi.com/" target="_blank">OMDB API</a></h4>
+				<h4>Loading Screen Was <a href = "https://www.demilked.com/gif-animations-replace-loading-screen/" target="_blank"> Found </a> And Was Created By Christian Tailor</h4>
+		</div>
+
+		<div id = "errorPage" style = "display:none">
+			<button class="getToHome" onclick="location.reload()">Home</button>
+			<h3>Error</h3>
+			<h4>Sorry, That Movie Cannot Be Found</h4>
+	</div>
+		
+		<div id = "historyPage">
+			<br>
+		</div>
+		
+		<div id="loadingPage">
+			<h1>Loading ...</h1>
+			<img src="loading_screen.gif">
+		</div>
+		
+		<div id="choosePage"></div>
+		<div id="viewPage"></div>
+		<div id="popularViewPage"></div>
+
+	   <div id="popularChoosePage">
+		</div>
+		
+		<div id="hiddenPage"></div>
+		
+			
+		
+				<script defer src = "https://code.jquery.com/jquery-3.2.1.min.js"></script>
+				<script defer src="script.js"></script>
+	</body>
+</html>
